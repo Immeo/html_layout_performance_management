@@ -20,6 +20,10 @@
 	--ten-color: #ffd888;
 	--eleven-color: #ccfffc;
 	--twelve-color: #23a9a1;
+	--thirteen-color: #f4f5f8;
+	--fourteen-color: #e5e5e5;
+	--fifteen-color: #eff0f6;
+	--sixteen-color: linear-gradient(180deg, #edeff5 0%, #fff 100%);
 }
 
 .container {
