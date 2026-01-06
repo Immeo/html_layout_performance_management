@@ -3,22 +3,34 @@
 
 :root {
 	/* Высота/ширина, контейнеры и т д  */
-	--container-width: 0px;
+	--container-width: 1137px;
 	--container-padding-x: 15px;
-
 	/* Шрифты */
-
+	--font-family: 'Poppins';
 	/* Цвета */
-	--primary-color: #;
-	--second-color: #;
-	--third-color: #;
-	--four-color: #;
-	--five-color: #;
-	--six-color: #;
+	--primary-color: #323f73;
+	--second-color: #95afba;
+	--third-color: #fff;
+	--four-color: #ffd9cc;
+	--five-color: #3c3c3c;
+	--six-color: #f5f8fa;
+	--seven-color: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+	--eight-color: #e95829;
+	--nine-color: #f5f8fa;
+	--ten-color: #ffd888;
+	--eleven-color: #ccfffc;
+	--twelve-color: #23a9a1;
 }
 
 .container {
 	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
 	margin-inline: auto;
 	padding-inline: var(--container-padding-x);
+}
+
+body {
+	font-family: var(--font-family);
+	font-weight: 400;
+	background: var(--third-color);
+	color: var(--primary-color);
 }
