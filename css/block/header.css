@@ -57,3 +57,23 @@ nav {
 	background: var(--primary-color);
 	color: var(--third-color);
 }
+
+@media (max-width: 930px) {
+	.nav__list {
+		gap: 0 2rem;
+	}
+
+	.nav__btns {
+		gap: 0 1rem;
+	}
+}
+
+@media (max-width: 754px) {
+	.nav__list {
+		gap: 0 1rem;
+	}
+
+	.nav__btns {
+		gap: 0 0.5rem;
+	}
+}
