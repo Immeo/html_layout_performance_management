@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/global/global.css" />
 		<link rel="stylesheet" href="./css/block/header.css" />
+		<link rel="stylesheet" href="./css/block/mobileMenu.css" />
 		<link rel="stylesheet" href="./css/section/section.css" />
 		<link rel="stylesheet" href="./css/block/hero.css" />
 		<link rel="stylesheet" href="./css/block/footer.css" />
@@ -26,14 +27,60 @@
 					<div class="nav__btns">
 						<button type="button" class="nav__btn">Signin</button>
 						<button type="button" class="nav__btn">Signup</button>
+						<button
+							type="button"
+							id="openMenu"
+							onclick="toggleMobileMenu()"
+							class="nav__burger"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</div>
 				</nav>
 			</div>
 		</header>
+
+		<dialog class="mobile-menu hidden">
+			<nav class="mobile-menu__body">
+				<button
+					aria-label="Close menu"
+					onclick="toggleMobileMenu()"
+					class="mobile-menu__close"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						viewBox="0 0 24 24"
+					>
+						<!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+						<path
+							fill="currentColor"
+							d="m6.4 18.308l-.708-.708l5.6-5.6l-5.6-5.6l.708-.708l5.6 5.6l5.6-5.6l.708.708l-5.6 5.6l5.6 5.6l-.708.708l-5.6-5.6z"
+						/>
+					</svg>
+				</button>
+
+				<a href="/" class="nav__logo text-standart">Performance</a>
+				<ul class="mobile-menu__list">
+					<li><a href="#" class="nav__link text-standart">Product</a></li>
+					<li><a href="#" class="nav__link text-standart">Academy</a></li>
+					<li><a href="#" class="nav__link text-standart">Careers</a></li>
+					<li><a href="#" class="nav__link text-standart">Blog</a></li>
+				</ul>
+				<div class="mobile-menu__btns">
+					<button type="button" class="nav__btn">Signin</button>
+					<button type="button" class="nav__btn">Signup</button>
+				</div>
+			</nav>
+		</dialog>
 		<main class="hero"></main>
 		<section><div class="container"></div></section>
 		<section></section>
 		<section></section>
 		<footer class="footer"></footer>
+		<script src="/js/toggleMobileMenu.js"></script>
 	</body>
 </html>
