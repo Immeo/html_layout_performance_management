@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./css/block/hero.css" />
 		<link rel="stylesheet" href="./css/block/footer.css" />
 		<link rel="stylesheet" href="./css/global/general.css" />
+		<script src="./js/toggleMobileMenu.js" defer></script>
 		<title>Home page - Performance Management</title>
 		<meta name="description" content="Home pages performance Management" />
 	</head>
@@ -27,12 +28,7 @@
 					<div class="nav__btns">
 						<button type="button" class="nav__btn">Signin</button>
 						<button type="button" class="nav__btn">Signup</button>
-						<button
-							type="button"
-							id="openMenu"
-							onclick="toggleMobileMenu()"
-							class="nav__burger"
-						>
+						<button type="button" id="openMenu" class="nav__burger">
 							<span></span>
 							<span></span>
 							<span></span>
@@ -41,12 +37,11 @@
 				</nav>
 			</div>
 		</header>
-
-		<dialog class="mobile-menu hidden">
+		<dialog id="mobileDialog" class="mobile-menu">
 			<nav class="mobile-menu__body">
 				<button
 					aria-label="Close menu"
-					onclick="toggleMobileMenu()"
+					id="closeMenu"
 					class="mobile-menu__close"
 				>
 					<svg
@@ -62,7 +57,6 @@
 						/>
 					</svg>
 				</button>
-
 				<a href="/" class="nav__logo text-standart">Performance</a>
 				<ul class="mobile-menu__list">
 					<li><a href="#" class="nav__link text-standart">Product</a></li>
@@ -81,6 +75,5 @@
 		<section></section>
 		<section></section>
 		<footer class="footer"></footer>
-		<script src="/js/toggleMobileMenu.js"></script>
 	</body>
 </html>
