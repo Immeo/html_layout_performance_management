@@ -1,0 +1,31 @@
+.hero {
+	display: flex;
+	padding: 2rem 0;
+	justify-content: space-between;
+}
+
+.hero__content {
+	display: flex;
+	max-width: clamp(17.813rem, 12.563rem + 23.33vw, 33.563rem);
+	margin: 0 auto;
+	gap: 2.5rem 0;
+	flex-direction: column;
+}
+
+.hero__title {
+}
+
+.hero__desc {
+	/* max font 22px, min 14px. max screen 1440, min 360. use calc and rem */
+	font-size: calc(1rem + (22 - 14) * ((100vw - 360px) / (1440 - 360)));
+}
+.text-standart {
+}
+.hero__form {
+}
+.hero__btn {
+}
+.btn {
+}
+.btn--primary {
+}
