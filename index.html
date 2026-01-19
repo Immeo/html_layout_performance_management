@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -10,26 +10,24 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<nav>
-					<a href="/" class="nav__logo text-standart">Performance</a>
-					<ul class="nav__list">
-						<li><a href="#" class="nav__link text-standart">Product</a></li>
-						<li><a href="#" class="nav__link text-standart">Academy</a></li>
-						<li><a href="#" class="nav__link text-standart">Careers</a></li>
-						<li><a href="#" class="nav__link text-standart">Blog</a></li>
-					</ul>
-					<div class="nav__btns">
-						<button type="button" class="nav__btn">Signin</button>
-						<button type="button" class="nav__btn">Signup</button>
-						<button type="button" id="openMenu" class="nav__burger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-					</div>
-				</nav>
-			</div>
+			<nav>
+				<a href="/" class="nav__logo text-standart">Performance</a>
+				<ul class="nav__list">
+					<li><a href="#" class="nav__link">Product</a></li>
+					<li><a href="#" class="nav__link">Academy</a></li>
+					<li><a href="#" class="nav__link">Careers</a></li>
+					<li><a href="#" class="nav__link">Blog</a></li>
+				</ul>
+				<div class="nav__btns">
+					<button type="button" class="nav__btn">Signin</button>
+					<button type="button" class="nav__btn">Signup</button>
+					<button type="button" id="openMenu" class="nav__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
 		</header>
 		<dialog id="mobileDialog" class="mobile-menu">
 			<nav class="mobile-menu__body">
@@ -65,7 +63,7 @@
 			</nav>
 		</dialog>
 		<main class="hero">
-			<div class="hero__content">
+			<div class="hero__left">
 				<h1 class="hero__title h1">
 					Your Next Performance Management Platform
 				</h1>
@@ -90,12 +88,16 @@
 					</button>
 				</form>
 			</div>
-			<img
-				src="./images/hero/hero-image.jpg"
-				width="624"
-				height="523"
-				alt="Image example app"
-			/>
+			<div class="hero__right">
+				<div class="hero__image">
+					<img
+						src="./images/hero/hero-image.jpg"
+						width="624"
+						height="523"
+						alt="Image example app"
+					/>
+				</div>
+			</div>
 		</main>
 		<section><div class="container"></div></section>
 		<section></section>
