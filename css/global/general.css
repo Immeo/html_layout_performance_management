@@ -71,3 +71,54 @@ Text list desktop 16px
 	font-size: clamp(14px, 2.2vw, 16px);
 	line-height: 1.6;
 }
+
+.form-general {
+	display: flex;
+	width: 100%;
+	gap: 0;
+}
+
+.form-general__icon {
+	position: relative;
+}
+.form-general__icon::before {
+	content: url('/images/icons/icon_mail.svg');
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	width: 20px;
+	height: 18px;
+	transform: translateY(-50%);
+}
+
+.form-general__email {
+	max-width: 345px;
+	width: 100%;
+	padding: 1.5rem 3rem 1.5rem 5rem;
+	border-radius: 15px 0 0 15px;
+	border: none;
+	background: var(--nine-color);
+}
+
+.form-general__email::placeholder {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	color: var(--five-color);
+}
+
+.btn-primary {
+	max-width: 199px;
+	width: 100%;
+	padding: 25px 31px;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 0 15px 15px 0;
+	border: none;
+	cursor: pointer;
+	white-space: nowrap;
+	text-align: center;
+	background: var(--seven-color);
+	color: var(--third-color);
+}

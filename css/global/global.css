@@ -3,6 +3,7 @@
 @import url('../section/section.css');
 @import url('../block/blocks.css');
 @import url('..//global/general.css');
+
 :root {
 	/* Высота/ширина, контейнеры и т д  */
 	--container-width: 1137px;

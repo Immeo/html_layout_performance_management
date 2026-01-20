@@ -1,0 +1,44 @@
+.hero {
+	display: flex;
+}
+
+.hero__left {
+	max-width: 50vw;
+	width: 100%;
+}
+
+.hero__left > .hero__title,
+.hero__desc,
+.form-general {
+	max-width: 537px;
+	margin-left: max(15px, min(143px, 100%));
+}
+
+.hero__left > .hero__title,
+.hero__desc {
+	margin-bottom: 30px;
+}
+
+.hero__title {
+	margin-top: 123px;
+}
+.hero__desc {
+	font-size: clamp(0.813rem, -0.332rem + 5.08vw, 1.375rem);
+	color: var(--second-color);
+}
+
+.hero__btn {
+}
+
+.hero__right {
+	max-width: 50vw;
+	width: 100%;
+	min-height: 600px;
+	background: var(--sixteen-color);
+}
+
+.hero__image {
+	max-width: 603px;
+	width: 100%;
+	margin-left: auto;
+}
