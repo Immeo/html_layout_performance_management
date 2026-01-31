@@ -11,7 +11,7 @@
 .hero__desc,
 .form-general {
 	max-width: 537px;
-	margin-left: max(15px, min(143px, 100%));
+	margin-left: 9.931vw;
 }
 
 .hero__left > .hero__title,
@@ -38,7 +38,133 @@
 }
 
 .hero__image {
-	max-width: 603px;
+	max-width: clamp(0.813rem, -38.232rem + 173.53vw, 37.688rem);
 	width: 100%;
 	margin-left: auto;
+}
+
+.hero__last-image {
+	display: none;
+}
+
+@media (max-width: 1327px) {
+	.hero__left > .hero__title,
+	.hero__desc,
+	.form-general {
+		margin-left: 86px;
+	}
+}
+
+@media (max-width: 1223px) {
+	.hero__left > .hero__title,
+	.hero__desc,
+	.form-general {
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 1208px) {
+	.hero__left > .hero__title,
+	.hero__desc,
+	.form-general {
+		margin-left: 15px;
+	}
+
+	.hero .form-general .btn-primary {
+		padding: 20px 25px;
+	}
+
+	.hero__image {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 1095px) {
+	.hero {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero__left {
+		display: flex;
+		max-width: 100%;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero__left > .hero__title,
+	.hero__desc,
+	.form-general {
+		margin-left: 0;
+	}
+
+	.hero__title {
+		text-align: center;
+	}
+
+	.hero__right {
+		max-width: 100%;
+		width: 100%;
+		min-height: 250px;
+		order: -1;
+	}
+
+	.hero__image {
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		margin-top: 1rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hero__first-image {
+		max-width: 30%;
+	}
+
+	.hero__last-image {
+		display: inline;
+		max-width: 30%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.hero__last-image img {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 645px) {
+	.hero__left > .hero__title,
+	.hero__title {
+		max-width: 21.875rem;
+	}
+}
+
+@media (max-width: 553px) {
+	.hero__desc {
+		max-width: 17.8125rem;
+		font-size: 0.875rem;
+		text-align: center;
+	}
+
+	.hero__left > .form-general {
+		row-gap: 2.1875rem;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero__left > .form-general > .form-general__icon > .form-general__email {
+		max-width: 17.8125rem;
+	}
+
+	.hero__first-image {
+		min-width: 7.75rem;
+	}
+
+	.hero__last-image {
+		min-width: 10.4375rem;
+	}
 }

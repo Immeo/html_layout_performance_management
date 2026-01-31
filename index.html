@@ -52,7 +52,7 @@
 				<a href="/" class="nav__logo text-standart">Performance</a>
 				<ul class="mobile-menu__list">
 					<li><a href="#" class="nav__link text-standart">Product</a></li>
-					<li><a href="#" class="nav__link text-standart">Academy</a></li>
+					<li><a hredf="#" class="nav__link text-standart">Academy</a></li>
 					<li><a href="#" class="nav__link text-standart">Careers</a></li>
 					<li><a href="#" class="nav__link text-standart">Blog</a></li>
 				</ul>
@@ -90,12 +90,27 @@
 			</div>
 			<div class="hero__right">
 				<div class="hero__image">
-					<img
-						src="./images/hero/hero-image.jpg"
-						width="603"
-						height="523"
-						alt="Image example app"
-					/>
+					<picture class="hero__first-image">
+						<source
+							srcset="./images/hero/hero-image-mobile1.jpg"
+							media="(max-width: 1095px)"
+							type="image/webp"
+						/>
+						<img
+							src="./images/hero/hero-image.jpg"
+							width="603"
+							height="523"
+							alt="Image example app"
+						/>
+					</picture>
+					<picture class="hero__last-image">
+						<source
+							srcset="./images/hero/hero-image-mobile2.jpg"
+							media="(max-width: 1095px)"
+							type="image/webp"
+						/>
+						<img src="./images/hero/hero-image-mobile2.jpg" alt="" />
+					</picture>
 				</div>
 			</div>
 		</main>
