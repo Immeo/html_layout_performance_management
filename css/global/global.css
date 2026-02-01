@@ -12,7 +12,8 @@
 	--font-family: 'Poppins';
 	/* Цвета */
 	--primary-color: #323f73;
-	--second-color: #95afba;
+	/* original color: #95afba; bad contract */
+	--second-color: #48636e;
 	--third-color: #fff;
 	--four-color: #ffd9cc;
 	--five-color: #3c3c3c;
