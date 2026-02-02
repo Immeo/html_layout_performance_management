@@ -1,0 +1,18 @@
+.sponsors__cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 2.5625rem;
+	justify-content: center;
+}
+.sponsor__card {
+	padding: 1.125rem 5.25rem;
+	border-radius: 15px;
+	border: 1px solid #f6f6f6;
+}
+
+.sponsor__card img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
