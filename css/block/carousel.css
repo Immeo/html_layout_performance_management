@@ -1,0 +1,28 @@
+.carousel__viewport {
+	max-width: 1176px;
+	margin-inline: auto;
+}
+
+.carousel__cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 16.125rem);
+	column-gap: 2.5625rem;
+}
+
+.carousel__card {
+	max-height: 6.25rem;
+	padding: 1.125rem 1rem;
+	border-radius: 15px;
+	border: 1px solid #f6f6f6;
+}
+
+.carousel__card img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.carousel__card-clone {
+	display: none;
+}
