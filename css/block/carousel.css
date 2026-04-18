@@ -1,11 +1,10 @@
 .carousel__viewport {
-	max-width: 1176px;
+	max-width: 73.5rem;
 	margin-inline: auto;
 }
 
 .carousel__cards {
 	display: grid;
-	grid-gap: 20px;
 	grid-template-columns: repeat(4, 16.125rem);
 	column-gap: 2.5625rem;
 }
