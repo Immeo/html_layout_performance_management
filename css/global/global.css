@@ -8,9 +8,6 @@
 	/* Высота/ширина, контейнеры и т д  */
 	--container-width: 1137px;
 	--container-padding-x: 15px;
-	--card-w: clamp(260px, 72vw, 820px);
-	--card-h: clamp(140px, 22vw, 260px);
-	--gap: clamp(14px, 2vw, 28px);
 	/* Шрифты */
 	--font-family: 'Poppins';
 	/* Цвета */
@@ -31,6 +28,14 @@
 	--fourteen-color: #e5e5e5;
 	--fifteen-color: #eff0f6;
 	--sixteen-color: linear-gradient(180deg, #edeff5 0%, #fff 100%);
+	/* переменные для карусели */
+
+	--carousel-card-width: clamp(9.5rem, 33vw, 10.4375rem); /* максимум 167px */
+	--carousel-card-height: 5.625rem;
+	--carousel-gap: clamp(0.75rem, 3.2vw, 1rem);
+	--carousel-peek: calc(
+		var(--carousel-card-width) * 0.15
+	); /* 15% соседних карточек */
 }
 
 .container {
