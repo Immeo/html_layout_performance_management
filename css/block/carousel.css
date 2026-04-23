@@ -26,7 +26,7 @@
 	object-fit: contain;
 }
 
-.carousel__card--clone {
+.carousel__card-clone {
 	display: none;
 }
 
@@ -117,7 +117,7 @@
 	}
 
 	.carousel__card,
-	.carousel__card--clone {
+	.carousel__card-clone {
 		display: flex;
 		flex: 0 0 var(--carousel-card-width);
 		width: var(--carousel-card-width);
