@@ -26,10 +26,6 @@
 	object-fit: contain;
 }
 
-.carousel__card-clone {
-	display: none;
-}
-
 @media (max-width: 1188px) {
 	.carousel__viewport {
 		max-width: 60rem;
@@ -112,12 +108,9 @@
 		padding-inline: calc(
 			50vw - ((var(--carousel-card-width) * 1.5) + var(--carousel-gap))
 		);
-		animation: carousel-mobile-loop 14s linear infinite;
-		will-change: transform;
 	}
 
-	.carousel__card,
-	.carousel__card-clone {
+	.carousel__card {
 		display: flex;
 		flex: 0 0 var(--carousel-card-width);
 		width: var(--carousel-card-width);
@@ -126,28 +119,5 @@
 		max-height: none;
 		padding: 1rem 0.875rem;
 		scroll-snap-align: center;
-	}
-
-	.carousel__viewport:hover .carousel__cards,
-	.carousel__viewport:active .carousel__cards,
-	.carousel__viewport:focus-within .carousel__cards {
-		animation-play-state: paused;
-	}
-
-	@keyframes carousel-mobile-loop {
-		from {
-			transform: translateX(0);
-		}
-		to {
-			transform: translateX(
-				calc(-4 * (var(--carousel-card-width) + var(--carousel-gap)))
-			);
-		}
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	.carousel__cards {
-		animation: none !important;
 	}
 }
