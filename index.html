@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/global/global.css" />
 		<script src="./js/toggleMobileMenu.js" defer></script>
+		<script src="./js/carousel-loop.js" defer></script>
 		<title>Home page - Performance Management</title>
 		<meta name="description" content="Home pages performance Management" />
 	</head>
@@ -96,10 +97,11 @@
 			<div class="hero__right">
 				<div class="hero__image">
 					<picture class="hero__first-image">
+						<!-- 1. Исправлен type на image/svg+xml -->
 						<source
-							srcset="./images/hero/hero-image-mobile1.svg"
 							media="(max-width: 1095px)"
-							type="svg/webp"
+							srcset="./images/hero/hero-image-mobile1.svg"
+							type="image/svg+xml"
 						/>
 						<img
 							src="./images/hero/hero-image.jpg"
@@ -108,13 +110,19 @@
 							alt="Image example app"
 						/>
 					</picture>
+
 					<picture class="hero__last-image">
 						<source
 							srcset="./images/hero/hero-image-mobile2.svg"
 							media="(max-width: 1095px)"
 							type="svg/webp"
 						/>
-						<img src="./images/hero/hero-image-mobile2.svg" alt="" />
+						<img
+							src="./images/hero/hero-image-mobile2.svg"
+							width="167"
+							height="115"
+							alt=""
+						/>
 					</picture>
 				</div>
 			</div>
@@ -166,6 +174,5 @@
 		<section></section>
 		<section></section>
 		<footer class="footer"></footer>
-		<script src="./js/carousel-loop.js"></script>
 	</body>
 </html>
